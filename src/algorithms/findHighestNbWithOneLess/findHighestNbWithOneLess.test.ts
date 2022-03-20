@@ -1,6 +1,6 @@
 import findHighestNbWithOneLess from "./findHighestNbWithOneLess";
 
-test("Check all combinations of numbers with", () => {
+test("Check all combinations of numbers possible with the number removed and return the highest number", () => {
   expect(findHighestNbWithOneLess(15958, 5)).toEqual(1958);
   expect(findHighestNbWithOneLess(-5859, 5)).toEqual(-589);
   expect(findHighestNbWithOneLess(-5000, 5)).toEqual(-0);

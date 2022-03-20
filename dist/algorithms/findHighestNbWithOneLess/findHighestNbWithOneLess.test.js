@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const findHighestNbWithOneLess_1 = __importDefault(require("./findHighestNbWithOneLess"));
-test("Check all combinations of numbers with", () => {
+test("Check all combinations of numbers possible with the number removed and return the highest number", () => {
     expect((0, findHighestNbWithOneLess_1.default)(15958, 5)).toEqual(1958);
     expect((0, findHighestNbWithOneLess_1.default)(-5859, 5)).toEqual(-589);
     expect((0, findHighestNbWithOneLess_1.default)(-5000, 5)).toEqual(-0);
