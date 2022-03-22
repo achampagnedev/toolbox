@@ -1,5 +1,5 @@
 const isBalanced = (expression: string) => {
-  if (expression === "") return true;
+  if (!expression.length) return true;
 
   const expressionArr: string[] = expression.split("");
   let stack: string[] = [];
@@ -18,7 +18,7 @@ const isBalanced = (expression: string) => {
     }
   }
 
-  return stack.length === 0;
+  return !stack.length;
 };
 
 export default isBalanced;

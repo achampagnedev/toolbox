@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const isBalanced = (expression) => {
-    if (expression === "")
+    if (!expression.length)
         return true;
     const expressionArr = expression.split("");
     let stack = [];
@@ -19,6 +19,6 @@ const isBalanced = (expression) => {
             return false;
         }
     }
-    return stack.length === 0;
+    return !stack.length;
 };
 exports.default = isBalanced;
